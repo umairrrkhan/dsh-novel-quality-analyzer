@@ -12,6 +12,20 @@ Analysis runs locally in your browser. No API key, LLM request, or analysis subs
 
 > This plugin provides writing-style diagnostics. It does not judge plot, literary quality, originality, plagiarism, or AI authorship.
 
+## Demo
+
+### Excerpt analysis
+
+The analyzer displays the style score, word counts, and vocabulary diversity alongside your excerpt.
+
+![DSH Novel Quality Analyzer displaying diagnostics for a 90-word excerpt](Screenshot%202026-10-12%20110040.png)
+
+### Short-sample handling
+
+Excerpts with fewer than 50 words show their metrics without assigning a style score.
+
+![DSH Novel Quality Analyzer showing an unscored 44-word excerpt](Screenshot%202026-10-12%20110115.png)
+
 ## Installation
 
 Requirements:
