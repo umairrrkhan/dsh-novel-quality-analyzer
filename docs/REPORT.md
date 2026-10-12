@@ -1,8 +1,11 @@
 # DSH Novel Quality Analyzer: implementation and quality report
 
-**Author:** umairrrkhan  
-**Date:** 12 October 2026  
-**Published release:** `dsh-novel-quality-analyzer@1.1.0`  
+**Author:** umairrrkhan
+
+**Date:** 12 October 2026
+
+**Published release:** `dsh-novel-quality-analyzer@1.1.0`
+
 **Repository:** https://github.com/umairrrkhan/dsh-novel-quality-analyzer
 
 ## Outcome
