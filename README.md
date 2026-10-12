@@ -4,7 +4,7 @@
 [![Plugin checks](https://github.com/umairrrkhan/dsh-novel-quality-analyzer/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/umairrrkhan/dsh-novel-quality-analyzer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A community plugin for **DeepSeek Harness** that analyzes chapters and story excerpts for vocabulary diversity, clichés, repeated words, and repeated sentences.
+A community **novel analyzer plugin for DeepSeek Harness** that checks chapters and story excerpts for vocabulary diversity, clichés, repeated words, and repeated sentences.
 
 **Current release: version 1.1.1**
 

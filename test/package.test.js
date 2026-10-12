@@ -27,6 +27,8 @@ test('package version agrees with analysis output', () => {
 test('README names the current public npm package and release version', () => {
   const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
   assert.ok(readme.includes(`https://www.npmjs.com/package/${pkg.name}`));
-  assert.ok(readme.includes(`version **${pkg.version}**`));
+  const plainText = readme.replace(/[*`]/g, '');
+  const documentedVersion = plainText.match(/\bversion\s+(\d+\.\d+\.\d+(?:-[\w.-]+)?)/i)?.[1];
+  assert.equal(documentedVersion, pkg.version, 'README must document the current release version');
   assert.match(readme, /dsh plugin --profile web add dsh-novel-quality-analyzer/);
 });
