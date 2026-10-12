@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — 12 October 2026
+
+- Fix CI on Node 22 by removing the unsupported Node 24 test-isolation flag.
+- Let both supported Node-version checks complete even if another matrix job fails.
+- Verify that the committed browser bundle matches the generated source.
+- Synchronize the npm README with the public package name, installation instructions, and release status.
+
 ## 1.1.0 — 12 October 2026
 
 - Use the npm identity `dsh-novel-quality-analyzer` consistently in the host, browser loader, bundle patch, and documentation.

@@ -2,7 +2,17 @@
 
 Local writing diagnostics for **DeepSeek Harness**. Inspect a chapter or excerpt for vocabulary diversity, cliché occurrences, repeated content words and repeated sentences, then copy an evidence-backed report.
 
-Published on npm: **[dsh-novel-quality-analyzer](https://www.npmjs.com/package/dsh-novel-quality-analyzer)**, version **1.1.0**. This is an independent community plugin, not an official DeepSeek product. It uses no LLM, API key, network request, or runtime npm dependency. The harness supplies React and its UI primitives.
+Published on npm: **[dsh-novel-quality-analyzer](https://www.npmjs.com/package/dsh-novel-quality-analyzer)**, version **1.1.1**. This is an independent community plugin, not an official DeepSeek product. It uses no LLM, API key, network request, or runtime npm dependency. The harness supplies React and its UI primitives.
+
+## Quick start
+
+Install the published package into an existing Harness web profile:
+
+```sh
+dsh plugin --profile web add dsh-novel-quality-analyzer
+```
+
+Then open a conversation, click **Analyze writing**, and paste your excerpt.
 
 ## Install in DeepSeek Harness
 
@@ -85,8 +95,12 @@ npm run check
 npm publish --access public
 ```
 
-Do not place registry credentials in this repository. Publication requires account authorization and may require two-factor authentication. Version 1.1.0 has been verified with `npm view` and a fresh public-registry installation. Future releases require the same checks.
+Do not place registry credentials in this repository. Publication requires account authorization and may require two-factor authentication. Before publishing any release, verify both supported Node versions, inspect the packed README, and check a fresh registry installation after publication. See [release verification](docs/validation/release.json) for the observed status.
 
 ## License
 
 [MIT](LICENSE).
+
+## Release compatibility
+
+Version 1.1.1 fixes the Node 22 test-command failure in version 1.1.0 and ships the current README in the npm archive. Use the latest patch version when installing. GitHub and npm display separate README copies; npm receives its copy when a new version is published.

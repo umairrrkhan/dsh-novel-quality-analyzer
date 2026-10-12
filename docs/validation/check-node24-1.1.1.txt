@@ -1,0 +1,100 @@
+
+> dsh-novel-quality-analyzer@1.1.1 check
+> npm test && npm run benchmark && node scripts/check-package.mjs
+
+
+> dsh-novel-quality-analyzer@1.1.1 test
+> npm run build && node --test
+
+
+> dsh-novel-quality-analyzer@1.1.1 build
+> node scripts/build.mjs
+
+✔ empty and punctuation-only input is unscored with finite metrics (20.011734ms)
+✔ Unicode accents, combining marks, curly apostrophes and contractions (0.585518ms)
+✔ counts every phrase occurrence with exact text ranges (0.474733ms)
+✔ cliche detection respects letter boundaries (0.232344ms)
+✔ evidence ranges are bounded but the occurrence count is complete (0.530716ms)
+✔ ignores frequent function words and flags content-word repetition (0.79011ms)
+✔ repetition threshold is configurable and result ordering is deterministic (1.080871ms)
+✔ Map counting is safe for object-property words (0.62148ms)
+✔ moving diversity equals naive sliding-window calculation (0.332563ms)
+✔ fixed-window vocabulary remains comparable for repeated chapters (1.978721ms)
+✔ uses sentence segmentation and detects repeated substantial sentences (0.285093ms)
+✔ very short or unsupported segmented-language samples are not scored (0.421724ms)
+✔ penalties explain the bounded score and repetition lowers it (0.54052ms)
+✔ rejects non-string text and malformed, unknown or unsafe limits (5.362704ms)
+✔ maximum-length input produces bounded evidence and does not truncate silently (23.301177ms)
+✔ exported report includes caveats and never invents a score for tiny inputs (0.68189ms)
+✔ module identity and activation use the published protocol without React hooks in apply (20.307692ms)
+✔ opening an empty analyzer always displays the editable text field and close control (30.119156ms)
+✔ typing renders actual analysis and repeated occurrence evidence (311.620905ms)
+✔ copy action exports the report and handles unavailable clipboard (4.647254ms)
+✔ oversized text reports an actionable error instead of freezing or showing stale results (305.675542ms)
+✔ HTML-like story content is rendered as text and short samples are unscored (306.966884ms)
+✔ clear and close reset private text and cancel pending analysis (8.205406ms)
+✔ disposing the plugin unregisters slot and locale effects (0.269369ms)
+✔ host is importable ESM without browser globals or runtime dependencies (7.437708ms)
+✔ bundle patch and browser loader use the published package identity (1.236702ms)
+✔ package version agrees with analysis output (4.330935ms)
+✔ README names the current public npm package and release version (0.275548ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2157.290213
+
+> dsh-novel-quality-analyzer@1.1.1 benchmark
+> node scripts/benchmark.mjs
+
+{
+  "node": "v24.19.0",
+  "platform": "linux/x64",
+  "scope": "Synthetic repeated English prose; warmed pure analyzer, not browser render or whole-harness RAM.",
+  "results": [
+    {
+      "characters": 10000,
+      "words": 1653,
+      "runs": 10,
+      "medianMs": 1.39,
+      "p95Ms": 1.66,
+      "resultBytes": 974
+    },
+    {
+      "characters": 50000,
+      "words": 8265,
+      "runs": 10,
+      "medianMs": 5.17,
+      "p95Ms": 5.8,
+      "resultBytes": 988
+    },
+    {
+      "characters": 200000,
+      "words": 33058,
+      "runs": 10,
+      "medianMs": 23.75,
+      "p95Ms": 33.66,
+      "resultBytes": 999
+    }
+  ]
+}
+{
+  "package": "dsh-novel-quality-analyzer",
+  "version": "1.1.1",
+  "tarballBytes": 17176,
+  "unpackedBytes": 51957,
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "client.js",
+    "cordis.patch.yml",
+    "docs/REPORT.md",
+    "index.js",
+    "lib/analyzer.js",
+    "package.json"
+  ]
+}

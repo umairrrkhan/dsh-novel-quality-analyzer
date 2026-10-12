@@ -1,0 +1,242 @@
+
+> dsh-novel-quality-analyzer@1.1.1 check
+> npm test && npm run benchmark && node scripts/check-package.mjs
+
+
+> dsh-novel-quality-analyzer@1.1.1 test
+> npm run build && node --test
+
+
+> dsh-novel-quality-analyzer@1.1.1 build
+> node scripts/build.mjs
+
+TAP version 13
+# Subtest: empty and punctuation-only input is unscored with finite metrics
+ok 1 - empty and punctuation-only input is unscored with finite metrics
+  ---
+  duration_ms: 18.056678
+  type: 'test'
+  ...
+# Subtest: Unicode accents, combining marks, curly apostrophes and contractions
+ok 2 - Unicode accents, combining marks, curly apostrophes and contractions
+  ---
+  duration_ms: 0.417889
+  type: 'test'
+  ...
+# Subtest: counts every phrase occurrence with exact text ranges
+ok 3 - counts every phrase occurrence with exact text ranges
+  ---
+  duration_ms: 0.321326
+  type: 'test'
+  ...
+# Subtest: cliche detection respects letter boundaries
+ok 4 - cliche detection respects letter boundaries
+  ---
+  duration_ms: 0.20907
+  type: 'test'
+  ...
+# Subtest: evidence ranges are bounded but the occurrence count is complete
+ok 5 - evidence ranges are bounded but the occurrence count is complete
+  ---
+  duration_ms: 0.305473
+  type: 'test'
+  ...
+# Subtest: ignores frequent function words and flags content-word repetition
+ok 6 - ignores frequent function words and flags content-word repetition
+  ---
+  duration_ms: 0.665586
+  type: 'test'
+  ...
+# Subtest: repetition threshold is configurable and result ordering is deterministic
+ok 7 - repetition threshold is configurable and result ordering is deterministic
+  ---
+  duration_ms: 0.767427
+  type: 'test'
+  ...
+# Subtest: Map counting is safe for object-property words
+ok 8 - Map counting is safe for object-property words
+  ---
+  duration_ms: 0.277792
+  type: 'test'
+  ...
+# Subtest: moving diversity equals naive sliding-window calculation
+ok 9 - moving diversity equals naive sliding-window calculation
+  ---
+  duration_ms: 0.973683
+  type: 'test'
+  ...
+# Subtest: fixed-window vocabulary remains comparable for repeated chapters
+ok 10 - fixed-window vocabulary remains comparable for repeated chapters
+  ---
+  duration_ms: 0.759635
+  type: 'test'
+  ...
+# Subtest: uses sentence segmentation and detects repeated substantial sentences
+ok 11 - uses sentence segmentation and detects repeated substantial sentences
+  ---
+  duration_ms: 0.221508
+  type: 'test'
+  ...
+# Subtest: very short or unsupported segmented-language samples are not scored
+ok 12 - very short or unsupported segmented-language samples are not scored
+  ---
+  duration_ms: 0.379322
+  type: 'test'
+  ...
+# Subtest: penalties explain the bounded score and repetition lowers it
+ok 13 - penalties explain the bounded score and repetition lowers it
+  ---
+  duration_ms: 0.378511
+  type: 'test'
+  ...
+# Subtest: rejects non-string text and malformed, unknown or unsafe limits
+ok 14 - rejects non-string text and malformed, unknown or unsafe limits
+  ---
+  duration_ms: 4.328111
+  type: 'test'
+  ...
+# Subtest: maximum-length input produces bounded evidence and does not truncate silently
+ok 15 - maximum-length input produces bounded evidence and does not truncate silently
+  ---
+  duration_ms: 20.938247
+  type: 'test'
+  ...
+# Subtest: exported report includes caveats and never invents a score for tiny inputs
+ok 16 - exported report includes caveats and never invents a score for tiny inputs
+  ---
+  duration_ms: 0.474723
+  type: 'test'
+  ...
+# Subtest: module identity and activation use the published protocol without React hooks in apply
+ok 17 - module identity and activation use the published protocol without React hooks in apply
+  ---
+  duration_ms: 24.210815
+  type: 'test'
+  ...
+# Subtest: opening an empty analyzer always displays the editable text field and close control
+ok 18 - opening an empty analyzer always displays the editable text field and close control
+  ---
+  duration_ms: 35.540869
+  type: 'test'
+  ...
+# Subtest: typing renders actual analysis and repeated occurrence evidence
+ok 19 - typing renders actual analysis and repeated occurrence evidence
+  ---
+  duration_ms: 326.716279
+  type: 'test'
+  ...
+# Subtest: copy action exports the report and handles unavailable clipboard
+ok 20 - copy action exports the report and handles unavailable clipboard
+  ---
+  duration_ms: 10.401204
+  type: 'test'
+  ...
+# Subtest: oversized text reports an actionable error instead of freezing or showing stale results
+ok 21 - oversized text reports an actionable error instead of freezing or showing stale results
+  ---
+  duration_ms: 306.241559
+  type: 'test'
+  ...
+# Subtest: HTML-like story content is rendered as text and short samples are unscored
+ok 22 - HTML-like story content is rendered as text and short samples are unscored
+  ---
+  duration_ms: 313.349229
+  type: 'test'
+  ...
+# Subtest: clear and close reset private text and cancel pending analysis
+ok 23 - clear and close reset private text and cancel pending analysis
+  ---
+  duration_ms: 8.226156
+  type: 'test'
+  ...
+# Subtest: disposing the plugin unregisters slot and locale effects
+ok 24 - disposing the plugin unregisters slot and locale effects
+  ---
+  duration_ms: 0.304632
+  type: 'test'
+  ...
+# Subtest: host is importable ESM without browser globals or runtime dependencies
+ok 25 - host is importable ESM without browser globals or runtime dependencies
+  ---
+  duration_ms: 8.133889
+  type: 'test'
+  ...
+# Subtest: bundle patch and browser loader use the published package identity
+ok 26 - bundle patch and browser loader use the published package identity
+  ---
+  duration_ms: 0.398961
+  type: 'test'
+  ...
+# Subtest: package version agrees with analysis output
+ok 27 - package version agrees with analysis output
+  ---
+  duration_ms: 4.565543
+  type: 'test'
+  ...
+# Subtest: README names the current public npm package and release version
+ok 28 - README names the current public npm package and release version
+  ---
+  duration_ms: 0.236741
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2192.096372
+
+> dsh-novel-quality-analyzer@1.1.1 benchmark
+> node scripts/benchmark.mjs
+
+{
+  "node": "v22.22.2",
+  "platform": "linux/x64",
+  "scope": "Synthetic repeated English prose; warmed pure analyzer, not browser render or whole-harness RAM.",
+  "results": [
+    {
+      "characters": 10000,
+      "words": 1653,
+      "runs": 10,
+      "medianMs": 1.32,
+      "p95Ms": 1.8,
+      "resultBytes": 974
+    },
+    {
+      "characters": 50000,
+      "words": 8265,
+      "runs": 10,
+      "medianMs": 6.56,
+      "p95Ms": 7.25,
+      "resultBytes": 988
+    },
+    {
+      "characters": 200000,
+      "words": 33058,
+      "runs": 10,
+      "medianMs": 23.9,
+      "p95Ms": 27.71,
+      "resultBytes": 999
+    }
+  ]
+}
+{
+  "package": "dsh-novel-quality-analyzer",
+  "version": "1.1.1",
+  "tarballBytes": 17176,
+  "unpackedBytes": 51957,
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "client.js",
+    "cordis.patch.yml",
+    "docs/REPORT.md",
+    "index.js",
+    "lib/analyzer.js",
+    "package.json"
+  ]
+}

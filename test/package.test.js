@@ -23,3 +23,10 @@ test('package version agrees with analysis output', () => {
   assert.equal(host.analyzeStory('text').analyzerVersion, pkg.version);
   assert.equal(pkg.publishConfig.access, 'public');
 });
+
+test('README names the current public npm package and release version', () => {
+  const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
+  assert.ok(readme.includes(`https://www.npmjs.com/package/${pkg.name}`));
+  assert.ok(readme.includes(`version **${pkg.version}**`));
+  assert.match(readme, /dsh plugin --profile web add dsh-novel-quality-analyzer/);
+});

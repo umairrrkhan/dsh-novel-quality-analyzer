@@ -1,6 +1,6 @@
 {
   "name": "dsh-novel-quality-analyzer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Local, transparent writing-style analysis for DeepSeek Harness: vocabulary, repeated words and sentences, and cliche evidence.",
   "type": "module",
   "main": "index.js",
@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "npm run build && node --test --test-isolation=none",
+    "test": "npm run build && node --test",
     "benchmark": "node scripts/benchmark.mjs",
     "check": "npm test && npm run benchmark && node scripts/check-package.mjs",
     "prepack": "npm run build",

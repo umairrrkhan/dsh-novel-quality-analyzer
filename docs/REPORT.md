@@ -8,6 +8,12 @@
 
 **Repository:** https://github.com/umairrrkhan/dsh-novel-quality-analyzer
 
+## Patch 1.1.1: CI and README repair
+
+The Node 22 GitHub Actions job failed because the test command used `--test-isolation=none`, which Node 22 does not support. The command now uses the standard `node --test` runner, and the CI matrix allows both supported versions to finish independently. The generated browser artifact is also checked against source. All 28 tests, benchmarks, and package checks passed locally on both Node 22.22.2 and Node 24.19.0.
+
+The GitHub README had been updated after publishing 1.1.0, leaving npm with its older archive copy. Patch 1.1.1 includes the current public package name, quick start, compatible Node versions, and release information in the archive. A regression check requires the README version and npm link to match package metadata. The publication record below refers to 1.1.0; the new patch release is verified separately after publishing.
+
 ## Outcome
 
 The original prototype has been converted into a working, testable DeepSeek Harness writing-diagnostics bundle. Its browser interface accepts excerpts, produces evidence-backed metrics, and exports a report. The same dependency-free analyzer is available to JavaScript consumers. The browser code uses the harness's React and UI primitives; analyzed text is not sent to a service or persisted by this plugin.

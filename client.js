@@ -116,7 +116,7 @@
     const score = warnings.includes("short_sample") || warnings.includes("segmentation_language_limit") ? null : Math.max(0, Math.min(100, Math.round(100 - Object.values(penalties).reduce((a, b) => a + b, 0))));
     return {
       schemaVersion: 1,
-      analyzerVersion: "1.1.0",
+      analyzerVersion: "1.1.1",
       characters: text.length,
       words: words.length,
       uniqueWords: counts.size,
