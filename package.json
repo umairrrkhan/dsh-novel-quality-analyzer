@@ -1,0 +1,39 @@
+{
+  "name": "@deepseek-harness/novel-quality-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered Novel Story Quality Analyzer for DeepSeek Harness. Analyze your story for vocabulary, cliches, and repetition.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "author": {
+    "name": "umairrrkhan",
+    "email": "umair64066@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umairrrkhan/dsh-novel-quality-analyzer.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "novel",
+    "writing",
+    "analysis"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

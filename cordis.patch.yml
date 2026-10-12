@@ -1,0 +1,3 @@
+- insert:
+    - id: novel-quality-analyzer
+      name: '@local/novel-quality-analyzer'
