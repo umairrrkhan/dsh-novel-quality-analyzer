@@ -2,14 +2,14 @@
 
 **Author:** umairrrkhan  
 **Date:** 12 October 2026  
-**Release candidate:** `dsh-novel-quality-analyzer@1.1.0`  
+**Published release:** `dsh-novel-quality-analyzer@1.1.0`  
 **Repository:** https://github.com/umairrrkhan/dsh-novel-quality-analyzer
 
 ## Outcome
 
 The original prototype has been converted into a working, testable DeepSeek Harness writing-diagnostics bundle. Its browser interface accepts excerpts, produces evidence-backed metrics, and exports a report. The same dependency-free analyzer is available to JavaScript consumers. The browser code uses the harness's React and UI primitives; analyzed text is not sent to a service or persisted by this plugin.
 
-The name is now consistently `dsh-novel-quality-analyzer`, matching the repository. The original `@deepseek-harness` namespace is not the author's personal npm namespace; using an unscoped project name avoids implying ownership of that organization. The package is configured for public publication. **npm availability has not been confirmed**: the environment initially returned `ENEEDAUTH`, and an account profile URL does not provide publishing credentials. GitHub installation is available after these changes are pushed.
+The name is now consistently `dsh-novel-quality-analyzer`, matching the repository. The original `@deepseek-harness` namespace is not the author's personal npm namespace; using an unscoped project name avoids implying ownership of that organization. **Version 1.1.0 is published publicly on [npm](https://www.npmjs.com/package/dsh-novel-quality-analyzer)** under `umair64066`. The public registry returned the expected version and its SHA-512 integrity matched the reviewed archive. A fresh registry install and analyzer/host-export smoke test passed without supplying npm login credentials. Source and report changes are pushed to the public repository. Authentication was completed through npm browser login and its publishing 2FA flow; no credentials are included in the source or package.
 
 ## What was repaired
 
@@ -103,6 +103,6 @@ Next improvements should prioritize a live harness acceptance test and a labeled
 
 ## Release and installation
 
-The public npm package identity is `dsh-novel-quality-analyzer@1.1.0`. Account-authenticated publication must be followed by `npm view` and a registry install check before describing it as published. Until then, the public repository provides a built-client Git install path.
+The public npm package identity is `dsh-novel-quality-analyzer@1.1.0`. It was built from commit `2a0b2d6d41fe59da217fc9573e6e0740a549fa74`; this post-publication report updates the packaging-time status contained in that immutable archive. The compressed release is 16,458 bytes (49,590 bytes unpacked), with nine allowlisted files and no runtime dependencies. See [release verification](validation/release.json) for artifact integrity and registry details. Both registry and built-client Git installation paths are documented.
 
 See the root README for profile installation, use, JavaScript API, reproduction commands and the publishing login procedure. CI runs checks on Node 22.22.2 and Node 24. A CI configuration is not itself evidence that those remote runs passed; release results record their observed state.

@@ -2,13 +2,13 @@
 
 Local writing diagnostics for **DeepSeek Harness**. Inspect a chapter or excerpt for vocabulary diversity, cliché occurrences, repeated content words and repeated sentences, then copy an evidence-backed report.
 
-Package: **`dsh-novel-quality-analyzer`**, version **1.1.0**. This is an independent community plugin, not an official DeepSeek product. It uses no LLM, API key, network request, or runtime npm dependency. The harness supplies React and its UI primitives.
+Published on npm: **[dsh-novel-quality-analyzer](https://www.npmjs.com/package/dsh-novel-quality-analyzer)**, version **1.1.0**. This is an independent community plugin, not an official DeepSeek product. It uses no LLM, API key, network request, or runtime npm dependency. The harness supplies React and its UI primitives.
 
 ## Install in DeepSeek Harness
 
 Use Node **22.22.2 or later**; Node 24 LTS is recommended. DeepSeek Harness is a fast-moving developer preview. This integration was checked against upstream source revision `d743267388641bc76f17c45ce8b4c231aed1d32c`, including its published-module and slot fixtures. The npm conversation/UI-primitives interfaces at 0.2.0-rc.2 were also checked.
 
-After the package has been published to npm:
+Install the public npm release:
 
 ```sh
 dsh plugin --profile web add dsh-novel-quality-analyzer
@@ -18,7 +18,7 @@ dsh --profile web
 
 Replace `web` with your existing web-capable profile. Installing into a new base-only profile does not itself install the Web UI. If you have not installed the harness, follow its [official quick start](https://github.com/deepseek-ai/deepseek-harness#run).
 
-Before npm publication, install this public GitHub repository into an existing profile:
+Alternatively, install this public GitHub repository into an existing profile:
 
 ```sh
 dsh plugin --profile web add github:umairrrkhan/dsh-novel-quality-analyzer
@@ -85,7 +85,7 @@ npm run check
 npm publish --access public
 ```
 
-Do not place registry credentials in this repository. Publication requires account authorization and may require two-factor authentication. Availability is only confirmed once `npm view dsh-novel-quality-analyzer@1.1.0` succeeds.
+Do not place registry credentials in this repository. Publication requires account authorization and may require two-factor authentication. Version 1.1.0 has been verified with `npm view` and a fresh public-registry installation. Future releases require the same checks.
 
 ## License
 

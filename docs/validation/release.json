@@ -1,0 +1,15 @@
+{
+  "package": "dsh-novel-quality-analyzer",
+  "version": "1.1.0",
+  "published": true,
+  "registryIntegrity": "sha512-pvkvZCGURLBRsonKES9BoDIOcL9XERvS9HSoEQCYLqVpVzuqVLDSkbInQFFpMBtF9Y3bmt7HUfqyp6MBrSAsZg==",
+  "tarball": "https://registry.npmjs.org/dsh-novel-quality-analyzer/-/dsh-novel-quality-analyzer-1.1.0.tgz",
+  "compressedBytes": 16458,
+  "unpackedBytes": 49590,
+  "sourceCommit": "2a0b2d6d41fe59da217fc9573e6e0740a549fa74",
+  "maintainers": [
+    "umair64066 <umair64066@gmail.com>"
+  ],
+  "publicInstallSmokeTest": "passed; no npm login credentials supplied",
+  "verificationDate": "2026-10-12"
+}
