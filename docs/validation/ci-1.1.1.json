@@ -1,0 +1,18 @@
+{
+  "runId": 38207300160,
+  "url": "https://github.com/umairrrkhan/dsh-novel-quality-analyzer/actions/runs/38207300160",
+  "commit": "176bb6afcfc36d8667a25bc104ecfb4ab06e2821",
+  "jobs": [
+    {
+      "name": "test (22.22.2)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "test (24)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "testsPerNodeVersion": 28
+}

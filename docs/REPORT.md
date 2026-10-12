@@ -4,15 +4,15 @@
 
 **Date:** 12 October 2026
 
-**Published release:** `dsh-novel-quality-analyzer@1.1.0`
+**Published release:** `dsh-novel-quality-analyzer@1.1.1`
 
 **Repository:** https://github.com/umairrrkhan/dsh-novel-quality-analyzer
 
 ## Patch 1.1.1: CI and README repair
 
-The Node 22 GitHub Actions job failed because the test command used `--test-isolation=none`, which Node 22 does not support. The command now uses the standard `node --test` runner, and the CI matrix allows both supported versions to finish independently. The generated browser artifact is also checked against source. All 28 tests, benchmarks, and package checks passed locally on both Node 22.22.2 and Node 24.19.0.
+The Node 22 GitHub Actions job failed because the test command used `--test-isolation=none`, which Node 22 does not support. The command now uses the standard `node --test` runner, and the CI matrix allows both supported versions to finish independently. The generated browser artifact is also checked against source. All 28 tests, benchmarks, and package checks passed locally on both Node 22.22.2 and Node 24.19.0. Both GitHub Actions matrix jobs also passed, including generated-bundle verification, packaging, and artifact upload: [verified CI run](https://github.com/umairrrkhan/dsh-novel-quality-analyzer/actions/runs/38207300160).
 
-The GitHub README had been updated after publishing 1.1.0, leaving npm with its older archive copy. Patch 1.1.1 includes the current public package name, quick start, compatible Node versions, and release information in the archive. A regression check requires the README version and npm link to match package metadata. The publication record below refers to 1.1.0; the new patch release is verified separately after publishing.
+The GitHub README had been updated after publishing 1.1.0, leaving npm with its older archive copy. Patch 1.1.1 includes the current public package name, quick start, compatible Node versions, and release information in the archive. A regression check requires the README version and npm link to match package metadata. Version 1.1.1 is now publicly available as the npm latest tag. Its registry integrity matches the reviewed archive, and a fresh public install verified both analysis and an exact match of the updated README.
 
 ## Outcome
 
@@ -112,6 +112,8 @@ Next improvements should prioritize a live harness acceptance test and a labeled
 
 ## Release and installation
 
+Current release: **1.1.1**. The source commit is `176bb6afcfc36d8667a25bc104ecfb4ab06e2821`; the compressed archive is 17,208 bytes. The [current release verification](validation/release.json) and [CI evidence](validation/ci-1.1.1.json) confirm both supported Node jobs and the installed README. The 1.1.0 record below is historical and its original evidence is retained in [release-1.1.0.json](validation/release-1.1.0.json).
+
 The public npm package identity is `dsh-novel-quality-analyzer@1.1.0`. It was built from commit `2a0b2d6d41fe59da217fc9573e6e0740a549fa74`; this post-publication report updates the packaging-time status contained in that immutable archive. The compressed release is 16,458 bytes (49,590 bytes unpacked), with nine allowlisted files and no runtime dependencies. See [release verification](validation/release.json) for artifact integrity and registry details. Both registry and built-client Git installation paths are documented.
 
-See the root README for profile installation, use, JavaScript API, reproduction commands and the publishing login procedure. CI runs checks on Node 22.22.2 and Node 24. A CI configuration is not itself evidence that those remote runs passed; release results record their observed state.
+See the root README for profile installation, use, JavaScript API, reproduction commands and the publishing login procedure. CI runs checks on Node 22.22.2 and Node 24. Both jobs passed for the 1.1.1 source commit; later runs can be checked in the repository Actions page.
